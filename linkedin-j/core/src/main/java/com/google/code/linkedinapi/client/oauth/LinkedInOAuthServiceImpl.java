@@ -43,7 +43,7 @@ import com.google.code.linkedinapi.client.constant.LinkedInApiUrls;
  * @author Nabeel Mukhtar
  *
  */
-class LinkedInOAuthServiceImpl implements LinkedInOAuthService {
+public class LinkedInOAuthServiceImpl implements LinkedInOAuthService {
 
     /** Field description */
     private final LinkedInApiConsumer apiConsumer;
@@ -60,7 +60,7 @@ class LinkedInOAuthServiceImpl implements LinkedInOAuthService {
      *
      * @param apiConsumer
      */
-    LinkedInOAuthServiceImpl(LinkedInApiConsumer apiConsumer) {
+    public LinkedInOAuthServiceImpl(LinkedInApiConsumer apiConsumer) {
     	requestHeaders = new HashMap<String, String>();
     	this.apiConsumer = apiConsumer;
     }
